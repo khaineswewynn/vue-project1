@@ -1,15 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <FirstComponentVue></FirstComponentVue>
+  <img alt="Vue logo" src="./assets/logo.png"> 
+  <SecondComponentVue></SecondComponentVue> 
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FirstComponentVue from './components/FirstComponent.vue'
+import SecondComponentVue from './components/SecondComponent.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    FirstComponentVue,SecondComponentVue
   }
 }
 </script>
@@ -19,7 +22,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  
   color: #2c3e50;
   margin-top: 60px;
 }
